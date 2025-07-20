@@ -250,7 +250,7 @@ fun ExpandableMainCategoryList(title: String, category: List<MainCategory>, expa
             Row (
                 modifier = Modifier
                     .fillMaxWidth()
-                    .background(Color(0xFF14EF04))
+                    .background(Color(0xFF5CF34E))
                     .clickable{onExpandChange()}
                     .padding(12.dp),
                 verticalAlignment = Alignment.CenterVertically,
@@ -273,7 +273,7 @@ fun ExpandableMainCategoryList(title: String, category: List<MainCategory>, expa
                 AnimatedVisibility(visible = expanded) {
                     Row (
                         modifier = Modifier
-                            .background(Color(0xFF44C4A1))
+                            .background(Color(0xFF5CF34E))
                             .padding(start = 4.dp, end = 4.dp, bottom = 4.dp, top = 0.dp)
                     ) {
                         Column(
