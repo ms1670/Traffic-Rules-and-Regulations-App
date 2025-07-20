@@ -211,7 +211,7 @@ fun TopAppBar() {
     )
     {
         Image(
-            painter = painterResource(id = R.drawable.ic_launcher_foreground),
+            painter = painterResource(id = R.drawable.ic_traffic_symbol_icon24),
             contentDescription = "",
             modifier = Modifier.fillMaxWidth(.45f)
                 .height(60.dp)
@@ -596,8 +596,8 @@ val BottomAppBarItem = listOf(
     ),
 
     BottomNavItems(
-        title = "Test",
-        route = "test",
+        title = "Info",
+        route = "info",
         selectedIcon = Icons.Filled.Info,
         unselectedIcon = Icons.Outlined.Info,
         badges = 0,
@@ -610,8 +610,6 @@ val BottomAppBarItem = listOf(
         unselectedIcon = Icons.Outlined.AccountCircle,
         badges = 0,
     ),
-
-
     )
 
 

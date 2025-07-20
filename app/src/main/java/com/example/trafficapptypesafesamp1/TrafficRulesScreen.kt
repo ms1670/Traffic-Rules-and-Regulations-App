@@ -73,7 +73,7 @@ fun TrafficRulesScreen(navController: NavController){
 
     Column {
         Text(
-            text = "Traffic Rules",
+            text = "Daily Reminder",
             fontSize = 28.sp,
             fontWeight = FontWeight.Bold,
             textAlign = TextAlign.Center,

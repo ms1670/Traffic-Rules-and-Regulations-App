@@ -56,10 +56,6 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
-
-
-
-
 @OptIn(ExperimentalFoundationApi::class)
 @Composable
 fun MainCategoriesScreen(navController: NavController){
@@ -78,7 +74,6 @@ fun MainCategoriesScreen(navController: NavController){
 //        }
         stickyHeader {
             Box (
-               
                 modifier = Modifier
                     .fillMaxWidth()
                     .background(AppColors.SuccessGreen.copy(0.9f)) // Ensure solid background

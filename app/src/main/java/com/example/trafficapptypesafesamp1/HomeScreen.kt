@@ -63,15 +63,21 @@ fun HomeScreen(mainCategories: List<MainCategory>) {
             .padding(12.dp)
     ) {
         Row(
-            Modifier.padding(top = 8.dp, bottom = 8.dp, start = 8.dp, end = 8.dp)
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(top = 8.dp, bottom = 8.dp, start = 8.dp, end = 8.dp),
+            horizontalArrangement = Arrangement.Center,
+            verticalAlignment = Alignment.CenterVertically
         ) {
             Image(
-                painter = painterResource(id = R.drawable.placehold_img),
+                painter = painterResource(id = R.drawable.banner_img),
                 contentDescription = "",
-                Modifier
+                modifier = Modifier
                     .clip(RoundedCornerShape(16.dp))
+                    .align(Alignment.CenterVertically)
             )
         }
+
         Column(
             modifier = Modifier.padding(12.dp)
         ) {
@@ -127,11 +133,16 @@ fun HomeScreen(mainCategories: List<MainCategory>) {
             )
 
         }
+
         Spacer(modifier = Modifier.height(8.dp))
 
-        Column {
+        Column(
+            modifier = Modifier
+                .background(Color(0xFFEA9E9E))
+                .padding(12.dp),
+        ) {
             Text(
-                text = "Learn about Traffic Rules",
+                text = "Learn more about Traffic Rules with Daily Reminders",
                 fontSize = 16.sp,
                 fontWeight = FontWeight.Normal,
                 lineHeight = 20.sp
@@ -139,13 +150,7 @@ fun HomeScreen(mainCategories: List<MainCategory>) {
 
             Spacer(modifier = Modifier.height(4.dp))
 
-
         }
-
-
-
-
-
     }
 }
 
@@ -245,7 +250,7 @@ fun ExpandableMainCategoryList(title: String, category: List<MainCategory>, expa
             Row (
                 modifier = Modifier
                     .fillMaxWidth()
-                    .background(Color(0xFF67FFF4))
+                    .background(Color(0xFF14EF04))
                     .clickable{onExpandChange()}
                     .padding(12.dp),
                 verticalAlignment = Alignment.CenterVertically,
@@ -268,7 +273,7 @@ fun ExpandableMainCategoryList(title: String, category: List<MainCategory>, expa
                 AnimatedVisibility(visible = expanded) {
                     Row (
                         modifier = Modifier
-                            .background(Color(0xFF67FFF4))
+                            .background(Color(0xFF44C4A1))
                             .padding(start = 4.dp, end = 4.dp, bottom = 4.dp, top = 0.dp)
                     ) {
                         Column(
